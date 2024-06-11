@@ -48,3 +48,20 @@ p {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) { 
+    .con-sidebar {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 4rem;
+        /*
+            grid-auto-flow: controla la dirección en la que se colocan nuevos elementos de cuadrícula en espacios vacíos de la cuadrícula.
+            Cuando se establece en column, los elementos de la cuadrícula se colocan a lo largo de las columnas. Esto significa que la 
+            cuadrícula intentará llenar primero las columnas antes de crear nuevas columnas, si es necesario.
+        */
+        grid-auto-flow: column;
+    }
+
+    aside {
+        grid-column: 2 / 3 ;
+    }
+}
