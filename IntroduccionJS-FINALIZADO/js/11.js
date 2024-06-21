@@ -14,7 +14,7 @@ const producto = {
 
 
 // Destructuring
-const {precio, nombreProducto } = producto;
+const {precio, nombreProducto} = producto;  //Crea la variable y extrae el valor de la propiedad del objeto
 
 console.log(precio);
 console.log(nombreProducto);

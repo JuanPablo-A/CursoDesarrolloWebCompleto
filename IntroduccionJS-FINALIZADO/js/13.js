@@ -9,7 +9,10 @@ const medidas = {
     medida: '1m'
 }
 
-const nuevoProducto = { ...producto, ...medidas };
+// No modificar el objeto original
+
+const nuevoProducto = { ...producto, ...medidas };  //Spread operator: Se utiliza el operador de propagación ... para copiar todas 
+                                                    //las propiedades y valores del objeto producto en el nuevo objeto.
 
 console.log(producto);
 console.log(nuevoProducto);

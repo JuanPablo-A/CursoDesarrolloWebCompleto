@@ -9,8 +9,8 @@ const email = 'correo@correo.com';
 console.log(tweet.length);
 console.log(producto2);
 
-// IndexOf (retorna posición)
-console.log(tweet.indexOf('JavaScript'));
+// IndexOf (retorna posición). Encontrar un elemento en un string
+console.log(tweet.indexOf('JavaScript')); 
 console.log(producto2.indexOf('Tablet'));
 console.log(email.indexOf('@'));
 

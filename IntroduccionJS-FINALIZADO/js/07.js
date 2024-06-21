@@ -13,7 +13,7 @@ resultado = ( 600 + 600 ) * 1.05;
 
 let puntaje = 10;
 
-// Incremento en 1 ++
+// Incremento en 1: puntaje++, ++puntaje
 
 puntaje += 10;
 

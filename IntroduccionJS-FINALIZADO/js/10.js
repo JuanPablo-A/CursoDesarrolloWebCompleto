@@ -15,5 +15,5 @@ const producto = {
 producto.imagen = 'imagen.jpg'; 
 
 // Eliminar propiedades
-delete producto.disponible;
+delete producto.disponible;  
 console.log(producto);
