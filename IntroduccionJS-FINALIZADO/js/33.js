@@ -1,6 +1,6 @@
 async function obtenerEmpleados() {
 
-    const archivo = 'empleados.json';
+    const archivo = '../empleados.json';
 
     // fetch(archivo)
     //     .then( resultado => resultado.json())
@@ -13,6 +13,9 @@ async function obtenerEmpleados() {
 
     const resultado = await fetch(archivo);
     const datos = await resultado.json();
-    console.log(datos);
+    const { empleados } = datos;
+    empleados.forEach(empleado => {
+        console.log(empleado.nombre);
+    }); 
 }
 obtenerEmpleados();
