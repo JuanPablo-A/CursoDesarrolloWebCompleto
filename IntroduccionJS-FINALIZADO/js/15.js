@@ -20,21 +20,21 @@ meses.forEach(function(mes) {
     }
 });
 
-// Includes
+// Includes: verifica si un valor existe en un arreglo
 let resultado = meses.includes('Diciembre');
 
-// Some ideal para arreglo de objetos
+// Some (ideal para arreglo de objetos): verifica si un valor existe en un arreglo de objetos
 resultado = carrito.some(function(producto) {
     return producto.nombre === 'Celular PRO'
 })
 
-// Reduce
+// Reduce: Toma los precios y los suma
 resultado = carrito.reduce(function(total, producto) {
     return total + producto.precio
 }, 0);
 
 
-// Filter
+// Filter:  obtener un arreglo basado en una condición
 resultado = carrito.filter(function(producto) {
     return producto.precio > 400
 });

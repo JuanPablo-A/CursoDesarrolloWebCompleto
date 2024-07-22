@@ -16,4 +16,4 @@ usuarioAutenticado
 // En los Promises existen 3 valores
 // Pending : No se ha cumplido pero tampoco se ha rechazado
 // Fulfilled : Ya se cumplio
-// Rejected : Se ha rechazado o no se pudo cumplir
+// Rejected : Se ha rechazado o no se pudo cumplir 

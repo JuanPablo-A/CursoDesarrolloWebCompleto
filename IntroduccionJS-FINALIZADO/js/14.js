@@ -26,7 +26,7 @@ const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'];
 // meses.pop(); // elimina el último elemento
 // meses.shift(); // elimina el primer elemento
 
-// meses.splice(2, 1);
+// meses.splice(2, 1); // Elimina un elemento basado en el indice que le pasemos y cuantos elementos queremos eliminar
 // console.table(meses);
 
 // Rest Operator o Spread Operator

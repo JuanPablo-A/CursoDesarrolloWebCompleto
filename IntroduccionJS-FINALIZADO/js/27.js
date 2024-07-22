@@ -20,7 +20,8 @@ function Producto(nombre, precio) {
     this.nombre = nombre;
     this.precio = precio;
 }
-// Crear funciones que solo se utilizan en un objeto en especifico.
+// prototype: Crear funciones que solo se utilizan en un objeto en especifico.
+// Son los metodos que se utilizan en un objeto en especifico. 
 Producto.prototype.formatearProducto = function() {
     return `El Producto ${this.nombre} tiene un precio de: $ ${this.precio}`;
 }

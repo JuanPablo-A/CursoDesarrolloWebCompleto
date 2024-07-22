@@ -9,10 +9,10 @@ const carrito = [
     { nombre: 'Laptop', precio: 800}
 ];
 
-// ForEach
+// ForEach: Se utiliza para iterar sobre un arreglo
 carrito.forEach( producto => console.log(producto.nombre));
 
-// map
+// map: Se utiliza para crear un nuevo arreglo con los resultados
 const arreglo2 = carrito.map( producto => `${producto.nombre} - ${producto.precio}`);
 
 console.log(arreglo2);
