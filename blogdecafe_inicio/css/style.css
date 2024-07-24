@@ -259,3 +259,18 @@ img { max-width: 100%;}
 .campo__field--textarea {
     height: 20rem;
 }
+.error {
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+.correcto {
+    background-color: rgb(131, 240, 131);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
