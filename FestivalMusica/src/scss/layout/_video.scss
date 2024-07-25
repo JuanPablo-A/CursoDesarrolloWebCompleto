@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.video {
+    position: relative;
+    min-height: 50rem;
+    max-height: 70rem;
+    overflow: hidden;  /* overflow: hidden; en CSS se utiliza para ocultar cualquier contenido que se desborde del contenedor.  */
+
+    .overlay{
+        position: absolute;
+        background: linear-gradient(
+            rgba(v.$morado, 60%),
+            rgba(darken(v.$morado, 20%), 90%)
+        );
+        inset: 0;
+
+        display: flex;
+        align-items: center;
+        
+    }
+
+    video{
+        display: block;
+        width: auto;
+        @include m.desktop{
+            width: 100%;
+        }
+    }
+}
+
+.contenido-video {
+    z-index: 10; /* z-index: 10; en CSS se utiliza para definir en que orden se enciman los elementos. */
+
+    h2{
+        color: v.$blanco;
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    p{
+        background-color: v.$rosa;
+        color: v.$blanco;
+        display: inline-block;
+        padding: 1rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin: 0;   
+    }
+}
