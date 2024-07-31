@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -528,6 +529,11 @@ body > section {
   font-weight: 400;
 }
 
+/*
+    nth-child => Se utiliza para seleccionar uno o más elementos en función 
+    de su posición en un grupo de hermanos (siblings). Permite aplicar estilos 
+    a elementos específicos dentro de una lista o grupo de elementos repetidos.
+*/
 .bg-amarillo {
   background-color: #fdda00;
 }
@@ -540,6 +546,56 @@ body > section {
 }
 .bg-verde li:nth-child(odd) {
   background-color: #69c4bf;
+}
+
+.galeria {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  /*
+    object-fit: cover; => Asegura que las imágenes se ajusten al contenedor de 20rem de altura, llenándolo completamente y recortando 
+    cualquier exceso si es necesario. Esto es útil para mantener un diseño consistente y atractivo visualmente, sin importar las dimensiones 
+    originales de las imágenes.
+  */
+}
+@media (min-width: 480px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+.galeria-imagenes img {
+  height: 20rem;
+  object-fit: cover;
+}
+
+.modal {
+  position: fixed; /* Fija el elemento, no se puede mover*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Añade un fondo oscuro semitransparente */
 }
 
 .contenedor-boletos {

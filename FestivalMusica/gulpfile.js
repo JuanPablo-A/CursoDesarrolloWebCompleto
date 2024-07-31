@@ -22,6 +22,7 @@ export function css ( done ){
 
 export function dev ( done){
     watch('src/scss/**/*.scss', css);        
+    watch('src/js/**/*.js', js);        
 
     done();
 }
