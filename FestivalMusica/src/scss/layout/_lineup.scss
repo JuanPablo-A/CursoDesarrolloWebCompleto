@@ -46,6 +46,11 @@
     }
 }
 
+/*
+    nth-child => Se utiliza para seleccionar uno o más elementos en función 
+    de su posición en un grupo de hermanos (siblings). Permite aplicar estilos 
+    a elementos específicos dentro de una lista o grupo de elementos repetidos.
+*/
 .bg-amarillo{
     background-color: v.$amarillo;
     li:nth-child(odd){
