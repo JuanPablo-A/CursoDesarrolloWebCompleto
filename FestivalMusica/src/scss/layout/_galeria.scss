@@ -35,8 +35,46 @@
   position: fixed; /* Fija el elemento, no se puede mover*/
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   background-color: rgba(v.$negro, 0.5); /* Añade un fondo oscuro semitransparente */
+  display: grid;
+  place-items: center; /* Centra el contenido que esta dentro del grid vertical y horizontalmente */
+  animation: fadeIn ease-in 0.5s; /* Añade la animacion que se creo como un @keyframes*/
+
+  &.fade-out {
+    animation: fadeOut ease-out 0.5s;
+  }
+
+  img{
+    max-width: 100rem;
+  }
+}
+
+.btn-cerrar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: v.$blanco;
+  border: none;
+  color: v.$negro;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/*
+  keyframes => Define una animación (propia) que se puede reutilizar en cualquier elemento.
+*/
+@keyframes fadeIn {
+  0% { opacity: 0; }
+
+  100%{ opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+
+  100%{ opacity: 0; }
 }

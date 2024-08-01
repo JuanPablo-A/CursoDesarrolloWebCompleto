@@ -327,6 +327,9 @@ body {
   color: #000000;
   font-size: 2rem;
 }
+body.overflow-hidden {
+  overflow: hidden;
+}
 
 p {
   font-size: 2rem;
@@ -376,6 +379,15 @@ body > section {
 .header {
   background-color: #4CB8B3;
 }
+@media (min-width: 768px) {
+  .header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #333;
+  }
+}
 .header .contenido-header {
   padding: 2rem;
 }
@@ -412,7 +424,7 @@ body > section {
   color: #FFFFFF;
   font-size: 2.4rem;
 }
-.navegacion-principal a:hover {
+.navegacion-principal a:hover, .navegacion-principal a.active {
   color: #fdda00;
 }
 
@@ -596,8 +608,49 @@ body > section {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Añade un fondo oscuro semitransparente */
+  display: grid;
+  place-items: center; /* Centra el contenido que esta dentro del grid vertical y horizontalmente */
+  animation: fadeIn ease-in 0.5s; /* Añade la animacion que se creo como un @keyframes*/
+}
+.modal.fade-out {
+  animation: fadeOut ease-out 0.5s;
+}
+.modal img {
+  max-width: 100rem;
 }
 
+.btn-cerrar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: none;
+  color: #000000;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/*
+  keyframes => Define una animación (propia) que se puede reutilizar en cualquier elemento.
+*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .contenedor-boletos {
   background-color: #4CB8B3;
 }
