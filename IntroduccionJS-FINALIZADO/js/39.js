@@ -30,7 +30,7 @@ const consultarApi = async () => {
 consultarApi();
 
 // Ahora, se pueden hacer las peticiones al mismo tiempo y da un mejor performance
-const consultarApi2 = async () => {
+const consultarApi2 = async () => { 
     try {
         const inicio = performance.now();
 
@@ -49,4 +49,4 @@ const consultarApi2 = async () => {
         console.log(error.message);
     }
 }
-consultarApi2();
+consultarApi2(); 
