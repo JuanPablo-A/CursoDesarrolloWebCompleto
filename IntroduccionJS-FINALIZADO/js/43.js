@@ -9,7 +9,7 @@ formulario.addEventListener('submit', e => {
     // Prevenir nuevas alertas 
     const alertaPrevia = document.querySelector('.alerta');
     if (alertaPrevia) {
-        alertaPrevia.remove();
+        alerr
     }
 
     const alerta = document.createElement('DIV');
@@ -28,5 +28,5 @@ formulario.addEventListener('submit', e => {
     formulario.appendChild(alerta);
     setTimeout(() => {
         alerta.remove();
-    }, 5000);
+    }, 1000);
 })
