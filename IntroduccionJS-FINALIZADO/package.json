@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "introduccionjs-finalizado": "file:"
+    "colors": "^1.4.0",
+    "dayjs": "^1.11.12",
+    "introduccionjs-finalizado": "file:",
+    "lodash": "^4.17.21"
   }
 }
