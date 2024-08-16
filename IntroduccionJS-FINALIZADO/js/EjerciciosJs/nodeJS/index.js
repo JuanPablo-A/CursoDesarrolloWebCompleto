@@ -20,5 +20,5 @@ const showUserINnfo = (userName, userAge) => {
     return `User is ${userName} and age is ${userAge}`;
 }
 
-console.log(showUserINnfo('John', 25));
+console.log(showUserINnfo('John', 20));
 console.log(showUserINnfo('Maria', 30));

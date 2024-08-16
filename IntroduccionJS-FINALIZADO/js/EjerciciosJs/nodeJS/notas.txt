@@ -1,0 +1,22 @@
+npm i "dependencia" -D => instalar dependencias que solo se van a usar en desarrollo
+npm i "dependencia" -g => instalar dependencias de manera globales (En todo el PC)
+
+ npx => Sirve para ejecutar algunas aplicaciones de consola que pueden instalarse con node pero sin la necesidad de 
+        de instalarse (Ejecutador de paquetes)
+
+crear scripts para ejecutar comandos desde consola:
+    "scripts": {
+    "start": "node index.js",
+    "cowsay": "cowsay Hola mundo"
+  },
+
+npx serve "nameFolder" => servir una carpeta (crear un servidor de forma rapida se utiliza para servir contenido exatico)
+
+Implementar promesas de forma mas sencilla con:  const { promisify } = require('util')
+                                             o:  const { readFile } = require('fs/promises');
+
+Cuando importamos el modulo events es muy comun colocarle el nombre de EventEmitter 
+const EventEmitter = require('events')
+
+Cuando estoy usando sintaxis import o export si es necesario colocar la extension
+import x from './math/index.js'
