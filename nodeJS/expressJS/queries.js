@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 
 /*
-  all funciona con todos los metodos http
+    Querys:
+    - Son parametros que se envian en la url despues del signo de interrogacion ( ? )
+    - all funciona con todos los metodos http
 */
 app.all('/info', (req, res) => {
     res.send('Información sobre la API')
