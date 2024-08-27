@@ -3,6 +3,8 @@ Este repositorio recopila una serie de proyectos que he desarrollado a lo largo 
 
 La idea detrás de estos proyectos es consolidar los conocimientos adquiridos en cursos y prácticas individuales, y combinarlos con ejemplos. Desde el diseño responsivo con CSS, pasando por la programación en JavaScript, hasta la implementación de APIs RESTful con Node.js y Express.
 
+Los cursos que he tomado como ejemplo son de **Juan De la Torre**, el curso de desarrollo web completo y varios curos de **fazt** que se encuentran en youtube, el de nodeJS y el de ExpressJS por el momento
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) 	![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 
 Actualmente, el repositorio contiene 6 carpetas, cada una representando un proyecto donde se exploraron diferentes conceptos y tecnologías:
