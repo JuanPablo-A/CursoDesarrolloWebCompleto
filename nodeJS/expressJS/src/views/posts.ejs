@@ -1,0 +1,14 @@
+<%- include('./partials/header.ejs') %>
+
+<h1> Data from SWAPI </h1>
+<% for (let i = 0; i < people.length; i++) { %>
+
+    <article>
+        <h1><%= people[i].name %></h1>
+        <p><%= people[i].height %></p>
+    </article>
+    
+<% } %>
+
+
+<%- include('partials/footer.ejs') %>
